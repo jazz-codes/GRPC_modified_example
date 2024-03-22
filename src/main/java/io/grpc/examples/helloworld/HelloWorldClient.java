@@ -95,7 +95,7 @@ public class HelloWorldClient {
                 .build();
         try {
             HelloWorldClient client = new HelloWorldClient(channel);
-            client.greet(user, "Yasmine", 12345678, 21, "Female");
+            client.greet("Yasmine","Ben Slimane", 12345678, 21, "Female");
         } finally {
             channel.shutdownNow().awaitTermination(5, TimeUnit.SECONDS);
         }
